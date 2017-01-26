@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="execute" parallel="classes" thread-count="2" >
+
+  <test name="SmartGFE">
+	<classes>
+	    <!--  class name="selenium_maven_smartGFE.TaxAuthAssertion" /-->
+		<class name="marketwatch.helloworld" />
+		<class name="marketwatch.marketwatchsel" />
+		<class name="">
+			<methods>
+				<include name="testMakeOrder" />
+				<include name="testUpdateOrder" />
+			</methods>
+		</class>
+	</classes>
+  </test>
+
+</suite>
